@@ -1,0 +1,16 @@
+@import "Signup/_Signup.css";
+@import "Login/_Login.css";
+@import "Common/_FlashMessage.css";
+@import "NavBar/_NavBar.css";
+@import "Account/_AccountSettings.css";
+@import "Home/_Home.css";
+
+body {
+  background-color: #7FDBFF;
+}
+
+.page-title {
+  margin-top: 2rem;
+  font-size: 4em;
+}
+

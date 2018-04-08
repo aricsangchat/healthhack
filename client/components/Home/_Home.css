@@ -1,0 +1,34 @@
+.fillin canvas {
+  border: 1px solid #000;
+}
+
+.section {
+  border-bottom: 1px solid #000;
+  margin: 0 0 50px;
+  padding: 0 0 50px;
+}
+
+.section-title {
+  margin-bottom: 20px;
+}
+
+.section:last-child {
+  border-bottom: 0px solid #000;
+}
+
+.element {
+  margin: 0 0 20px 0;
+}
+
+.element:last-child {
+  margin: 0 0 0 0;
+}
+
+.choice {
+  display: inline-block;
+  margin: 0 20px 0 0
+}
+
+.choice p {
+  margin: 0 0 0 0
+}
