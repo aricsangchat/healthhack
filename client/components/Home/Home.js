@@ -33,7 +33,7 @@ class Home extends Component {
         return (
           <div>
             <Section key={sectionIdArr[sectionIdArr.length - 1]} id={sectionIdArr[sectionIdArr.length - 1]} parags={this.props.state.drupal.paragraphs} />
-            <button onClick={() => this.handleFinish() }>Finish</button>
+            <button onClick={() => this.handleFinish() } className="btn btn-primary finish">Finish</button>
           </div>
         );
 
@@ -86,8 +86,8 @@ class Home extends Component {
 
         {this.renderFormTitle()}
         {this.renderFormSection(this.state.index)}
-        <button onClick={() => this.handleBack() }>Back</button>
-        <button onClick={() => this.handleNext() }>Next</button>
+        <button onClick={() => this.handleBack() } className="btn btn-primary">Back</button>
+        <button onClick={() => this.handleNext() } className="btn btn-primary">Next</button>
       </div>
     )
   }
