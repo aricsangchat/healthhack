@@ -59,9 +59,9 @@ class Home extends Component {
     }
   }
 
-  renderFormTitle() {
+  renderFormTitle(index) {
     if (this.props.state.drupal.forms.length > 0) {
-      return <h1 className='text-center page-title'>{this.props.state.drupal.forms[0].title}</h1>
+      return <h1 className='text-center page-title'>{this.props.state.drupal.forms[index].title}</h1>
     }
   }
 
@@ -115,7 +115,7 @@ class Home extends Component {
           {this.renderFormList()}
         </div>
 
-        {this.renderFormTitle()}
+        {this.renderFormTitle(this.state.formIndex)}
         {this.renderFormSection(this.state.index, this.state.formIndex, this.state.finish)}
         <button onClick={() => this.handleBack() } className="btn btn-primary">Back</button>
         <button onClick={() => this.handleNext() } className="btn btn-primary">Next</button>
